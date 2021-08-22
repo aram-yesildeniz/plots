@@ -1,0 +1,2 @@
+ga:pageLoadSample,ga:speedMetricsSample,ga:domLatencyMetricsSample,ga:pageLoadTime,ga:avgPageLoadTime,ga:domainLookupTime,ga:avgDomainLookupTime,ga:pageDownloadTime,ga:avgPageDownloadTime,ga:redirectionTime,ga:avgRedirectionTime,ga:serverConnectionTime,ga:avgServerConnectionTime,ga:serverResponseTime,ga:avgServerResponseTime,ga:domInteractiveTime,ga:avgDomInteractiveTime,ga:domContentLoadedTime,ga:avgDomContentLoadedTime
+1000,1000,1000,2388789,2.388789,1516,0.001516,119929,0.11992900000000001,11893,0.011893,87539,0.087539,42912,0.042912,1478386,1.478386,1479040,1.47904

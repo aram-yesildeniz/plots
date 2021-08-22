@@ -1,0 +1,4 @@
+Zalando Mock with Attribute 3
+500 runs
+Start: 13:00
+End: 19:15

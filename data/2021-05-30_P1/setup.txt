@@ -1,0 +1,4 @@
+Zalando Mock with GA Position 1
+500 runs
+Start: 14:30
+End: 21:00 (?)

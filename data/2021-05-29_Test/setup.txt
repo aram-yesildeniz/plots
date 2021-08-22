@@ -1,0 +1,4 @@
+Zalando Mock without GA
+500 runs
+Start: 17:00
+End: 00:00 (?)

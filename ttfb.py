@@ -5,6 +5,8 @@ from constants import *
 
 
 sns.set_theme()
+sns.set_style("whitegrid")
+
 
 # Extract Data and merge everything in one DataFrame
 
@@ -34,10 +36,8 @@ data_2_rv = data_frame_2[column_name].iloc[1::2].reset_index(drop=True)
 # data = pd.concat([data_1_rv, data_2_rv, data_3_rv], keys=[
 #                  'P1', 'P2', 'P3'], axis=1)
 
-data = pd.concat([data_1_rv, data_2_rv], keys=[
+data = pd.concat([data_1_fv, data_2_fv], keys=[
                  'OS1', 'OS2'], axis=1)
-
-print(data)
 
 
 # Plot
@@ -48,13 +48,15 @@ g = sns.displot(
     fill=True)
 
 g.set_axis_labels("Time (ms)")
-g.set(title='TTFB Repeat View')
+g.set(title='TTFB First View')
+sns.move_legend(g, "upper right", bbox_to_anchor=(1, 1), frameon=True)
 
 # sns.displot(data, kind="ecdf")
 
 
 # plt.show()
 plt.tight_layout()
+sns.despine(left=True)
 plt.gcf().savefig("__output.pdf", format='pdf')
 
 

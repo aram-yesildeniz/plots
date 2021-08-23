@@ -38,3 +38,15 @@ SPEED_INDEX = "SpeedIndex"
 LCP = "chromeUserTiming.LargestContentfulPaint"
 TBT = "TotalBlockingTime"
 CLS = "chromeUserTiming.CumulativeLayoutShift"
+
+
+# Titles
+
+TTFB_TITLE = "TTFB"
+DOCUMENT_COMPLETE_TITLE = "PLT"
+FULLY_LOADED_TITLE = "Fully Loaded"
+FCP_TITLE = "FCP"
+SPEED_INDEX_TITLE = "Speed Index"
+LCP_TITLE = "LCP"
+TBT_TITLE = "TBT"
+CLS_TITLE = "CLS"

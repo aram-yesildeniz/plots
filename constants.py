@@ -1,3 +1,5 @@
+# FILENAMES
+
 ORIGINAL_WPT_PATH = "data/2021-05-28_Original/210528_BE_4_summary.csv"
 TEST_WPT_PATH = "data/2021-05-29_Test/210529_2T_1_summary.csv"
 
@@ -24,3 +26,15 @@ OS1_GA_PATH = P1_GA_PATH
 
 OS2_WPT_PATH = "data/2021-06-03_OS2/210603_P0_1_summary.csv"
 OS2_GA_PATH = "data/2021-06-03_OS2/2021-06-03.csv"
+
+
+# METRICS
+
+TTFB = "TTFB"
+DOCUMENT_COMPLETE = "loadTime"
+FULLY_LOADED = "fullyLoaded"
+FCP = "firstContentfulPaint"
+SPEED_INDEX = "SpeedIndex"
+LCP = "chromeUserTiming.LargestContentfulPaint"
+TBT = "TotalBlockingTime"
+CLS = "chromeUserTiming.CumulativeLayoutShift"

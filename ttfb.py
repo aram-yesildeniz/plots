@@ -14,7 +14,7 @@ file_1 = OS1_WPT_PATH
 file_2 = OS2_WPT_PATH
 # file_3 = A3_WPT_PATH
 
-column_name = "TTFB"
+column_name = TTFB
 
 data_frame_1 = pd.read_csv(file_1)
 data_frame_2 = pd.read_csv(file_2)
@@ -43,21 +43,37 @@ data = pd.concat([data_1_fv, data_2_fv], keys=[
 # Plot
 
 g = sns.displot(
-    data,
+    data["OS1"],
     kind="kde",
-    fill=True)
+    fill=True,
+    legend=False,
+    label="OS1",
+)
+
+
+median1 = data["OS1"].median()
+median2 = data["OS2"].median()
+plt.axvline(median1, color='black', linestyle='solid',
+            linewidth=0.5, label="Median P1")
+plt.axvline(median2, color='black', linestyle='dashed',
+            linewidth=0.5, label="Median P1")
 
 g.set_axis_labels("Time (ms)")
 g.set(title='TTFB First View')
-sns.move_legend(g, "upper right", bbox_to_anchor=(1, 1), frameon=True)
+
+# plt.legend(loc='upper right')
+handles, labels = plt.gca().get_legend_handles_labels()
+print(handles)
+print(labels)
+# plt.legend(loc='upper right', labels=[
+#            'Median 1', 'Median 2', "OS2", "OS1"])
+
 
 # sns.displot(data, kind="ecdf")
+# kind="ecdf" for cumulative distribution function
 
 
 # plt.show()
 plt.tight_layout()
 sns.despine(left=True)
 plt.gcf().savefig("__output.pdf", format='pdf')
-
-
-# kind="ecdf" for cumulative distribution function

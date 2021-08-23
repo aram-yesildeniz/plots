@@ -30,8 +30,11 @@ OS2_GA_PATH = "data/2021-06-03_OS2/2021-06-03.csv"
 
 # METRICS
 
+DOM_CONTENT_LOADED = "domContentLoadedEventStart"
+GA_DOM_CONTENT_LOADED = "ga:avgDomContentLoadedTime"
 TTFB = "TTFB"
-DOCUMENT_COMPLETE = "loadTime"
+PLT = "loadTime"
+GA_PLT = "ga:avgPageLoadTime"
 FULLY_LOADED = "fullyLoaded"
 FCP = "firstContentfulPaint"
 SPEED_INDEX = "SpeedIndex"
@@ -40,10 +43,11 @@ TBT = "TotalBlockingTime"
 CLS = "chromeUserTiming.CumulativeLayoutShift"
 
 
-# Titles
+# TITLES
 
+DOM_CONTENT_LOADED_TITLE = "DOM Content Loaded"
 TTFB_TITLE = "TTFB"
-DOCUMENT_COMPLETE_TITLE = "PLT"
+PLT_TITLE = "PLT"
 FULLY_LOADED_TITLE = "Fully Loaded"
 FCP_TITLE = "FCP"
 SPEED_INDEX_TITLE = "Speed Index"

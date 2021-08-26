@@ -28,6 +28,47 @@ OS2_WPT_PATH = "data/2021-06-03_OS2/210603_P0_1_summary.csv"
 OS2_GA_PATH = "data/2021-06-03_OS2/2021-06-03.csv"
 
 
+# PAGE WEIGHT
+
+REQUESTS_FULL = "requestsFull"
+REQUESTS_HTML = "requests.html"
+REQUESTS_JS = "requests.js"
+REQUESTS_CSS = "requests.css"
+REQUESTS_IMAGE = "requests.image"
+REQUESTS_FONT = "requests.font"
+REQUESTS_VIDEO = "requests.video"
+REQUESTS_OTHER = "requests.other"
+
+BYTES_FULL = "bytesIn"
+BYTES_HTML = "bytes.html"
+BYTES_JS = "bytes.js"
+BYTES_CSS = "bytes.css"
+BYTES_IMAGE = "bytes.image"
+BYTES_FONT = "bytes.font"
+BYTES_VIDEO = "bytes.video"
+BYTES_OTHER = "bytes.other"
+
+
+# PAGE WEIGHT TITLES
+
+REQUESTS_FULL_TITLE = "Total"
+REQUESTS_HTML_TITLE = "HTML"
+REQUESTS_JS_TITLE = "JS"
+REQUESTS_CSS_TITLE = "CSS"
+REQUESTS_IMAGE_TITLE = "Image"
+REQUESTS_FONT_TITLE = "Font"
+REQUESTS_VIDEO_TITLE = "Video"
+REQUESTS_OTHER_TITLE = "Other"
+
+BYTES_FULL_TITLE = "Total"
+BYTES_HTML_TITLE = "HTML"
+BYTES_JS_TITLE = "JS"
+BYTES_CSS_TITLE = "CSS"
+BYTES_IMAGE_TITLE = "Image"
+BYTES_FONT_TITLE = "Font"
+BYTES_VIDEO_TITLE = "Video"
+BYTES_OTHER_TITLE = "Other"
+
 # METRICS
 
 DOM_CONTENT_LOADED = "domContentLoadedEventStart"
@@ -43,7 +84,7 @@ TBT = "TotalBlockingTime"
 CLS = "chromeUserTiming.CumulativeLayoutShift"
 
 
-# TITLES
+# METRIC TITLES
 
 DOM_CONTENT_LOADED_TITLE = "DOM Content Loaded"
 TTFB_TITLE = "TTFB"
